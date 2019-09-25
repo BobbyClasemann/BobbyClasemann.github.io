@@ -28,10 +28,12 @@ header {
      background-color: red;
  }
  footer {
-     clear: both;
-     background-color: yellow;
+    clear: both;
+    background-color: yellow;
  }
+
  body {
-     grid-row-start: 1;
-     grid-row-end: 3;
+    display: grid;
+    grid-row-start: 1;
+	grid-row-end: 3;
  }
