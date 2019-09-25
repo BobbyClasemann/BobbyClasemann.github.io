@@ -1,0 +1,6 @@
+ul#hoverable {
+    list-style: none;
+}
+ul {
+    list-style-type: square;
+}
