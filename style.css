@@ -32,6 +32,6 @@ header {
      background-color: yellow;
  }
  body {
-     background-color: black;
-     margin: 0px;
+     grid-row-start: 1;
+     grid-row-end: 3;
  }
