@@ -19,6 +19,13 @@ li {
     font-size: 11px;
 }
 
+div#base {
+    background-color: #FFFFFF;
+    min-height: 60px;
+    width: 810px;
+    margin: auto;
+}
+
 #top-bar {
     margin: auto;
     background-color: #565656;
