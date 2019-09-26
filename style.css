@@ -85,6 +85,7 @@ div#content {
     color: #4C4C4C;
     font-family: Tahoma;
     text-align: left;
+    padding-top: 20px;
 }
 
 div.sign-up-button {
@@ -113,11 +114,11 @@ div.infoBox {
     border-radius: 0px 0px 10px 10px;
 }
 
-div#space {
+/* div#space {
     margin: auto;
     background-color: #FFFFFF;
     width: 810px;
-}
+}*/
 
 a.walkthroughLink {
     color: #4F7715;
