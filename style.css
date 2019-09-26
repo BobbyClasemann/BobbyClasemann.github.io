@@ -60,6 +60,7 @@ div#top-begin-reasons {
 div.quote {
     font-size: 10px;
     text-align: left;
+    font-weight: normal;
 }
 
 div.author {
