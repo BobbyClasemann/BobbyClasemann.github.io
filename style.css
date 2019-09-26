@@ -15,27 +15,36 @@ section {
     padding-right: 30px;
 }
 
+li {
+    font-size: 11px;
+}
+
 #top-bar {
     margin: auto;
     background-color: #565656;
     color: #4C4C4C;
     font-size: 10px;
     font-family: Tahoma, Verdana, Arial, Helvetica;
-    width: 791px;
-    margin-top: -4px;
+    width: 790px;
+    height: 35px;
+    margin-top: -15px;
     padding: 0px 0px 0px 21.3333px;
     display: block;
 }
 #top-bar-links a{
+    font-weight: normal;
+    float: left;
+    font-size: 10px;
     color: #F2F2F2;
-    padding: 5px 15px 7px;
+    padding: 5px 15px 7px 15px;
     text-decoration: none;
+    background-color: #565656;
 }
 #top-bar-links a:hover {
     background-color: #ddd;
 }
 
-#home-button {
+a#home-button {
     color: #FFFFFF;
     background-color: #639A33;
 }
@@ -59,12 +68,15 @@ div.author {
 }
 
 div.section {
-    padding: 10px 0px 15px 54px;
+    padding-bottom: 15px;
+    padding-left: 55px;
+    /* padding: 10px 0px 15px 54px; */
+    font-size: 12px;
 }
 
 div#content {
     background-color: #FFFFFF;
-    width: 791px;
+    width: 810px;
     display: grid;
     grid-template-columns: 3fr 2fr;
     margin: auto;
@@ -83,17 +95,27 @@ div.sign-up-button {
 }
 
 div.informationBoxTitle {
+    text-align: left;
     color: #404040;
     font-size: 10.6667px;
     font-family: Tahoma, Verdana, Arial, Helvetica;
     padding: 8px 8px 8px 20px;
-    background: transparent url("http://web.archive.org/web/20040812114313im_/http://www.squarespace.com/universal/images/util/box_top_right.gif") no-repeat top right
+    background-color: #E4E9DB;
+    border-radius: 10px 10px 0px 0px;
+}
+
+div.infoBox {
+    background-color: #F4F7EF;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 div#space {
     margin: auto;
     background-color: #FFFFFF;
-    width: 791px;
+    width: 810px;
 }
 
 a.walkthroughLink {
@@ -103,8 +125,28 @@ a.walkthroughLink {
     font-weight: bold;
 }
 
+div#copyright {
+    color: #6F6F6F;
+    text-align: left;
+    margin-top: 40px;
+    font-weight: normal;
+}
+
+a.copyrightLink {
+    color: #6F6F6F;
+}
+
+p {
+    font-size: 12px;
+}
+
 div {
     padding-top: 10px;
+    font-size: 10px;
+}
+
+a#partisan {
+    font-size: 14px;
 }
 
 a {
