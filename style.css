@@ -40,6 +40,14 @@ section {
     background-color: #639A33;
 }
 
+div#begin-reasons {
+    border-top: 1px solid #ccc;
+}
+
+div#top-begin-reasons {
+    margin-top: 30px;
+}
+
 div.quote {
     font-size: 10px;
     text-align: left;
@@ -48,6 +56,10 @@ div.quote {
 div.author {
     text-align: right;
     font-size: 10.666px;
+}
+
+div.section {
+    padding: 10px 0px 15px 54px;
 }
 
 div#content {
@@ -64,6 +76,18 @@ div#content {
 
 div.sign-up-button {
     text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+div.informationBoxTitle {
+    color: #404040;
+    font-size: 10.6667px;
+    font-family: Tahoma, Verdana, Arial, Helvetica;
+    padding: 8px 8px 8px 20px;
+    background: transparent url("http://web.archive.org/web/20040812114313im_/http://www.squarespace.com/universal/images/util/box_top_right.gif") no-repeat top right
 }
 
 div#space {
@@ -71,6 +95,23 @@ div#space {
     background-color: #FFFFFF;
     width: 791px;
 }
+
+a.walkthroughLink {
+    color: #4F7715;
+    font-size: 10.6667px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div {
+    padding-top: 10px;
+}
+
+a {
+    color: #4F7715;
+    background-color: transparent;
+    text-decoration: underline;
+} 
 
 ul {
     list-style-type: square;
