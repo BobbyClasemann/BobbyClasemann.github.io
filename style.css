@@ -121,12 +121,6 @@ div.infoBox {
     border-radius: 0px 0px 10px 10px;
 }
 
-/* div#space {
-    margin: auto;
-    background-color: #FFFFFF;
-    width: 810px;
-}*/
-
 a.walkthroughLink {
     color: #4F7715;
     font-size: 10.6667px;
@@ -143,6 +137,10 @@ div#copyright {
 
 a.copyrightLink {
     color: #6F6F6F;
+}
+
+a.copyrightLink:hover {
+    color: black;
 }
 
 p {
