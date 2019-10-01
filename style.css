@@ -128,6 +128,10 @@ a.walkthroughLink {
     font-weight: bold;
 }
 
+a.walkthroughLink:hover {
+    color: lightgreen;
+}
+
 div#copyright {
     color: #6F6F6F;
     text-align: left;
