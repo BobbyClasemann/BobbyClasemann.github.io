@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Midterm Mashup</title>
+
+        <!-- Bootstrap setup -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <!-- Slider -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+                <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+
+            <h1 id="title"> Location Lookup</h1>
+
+
+            <div id="searchBar" class="input-group">
+                <input id="search-bar" class="form-control py-2 border-right-0 border search" type="search" placeholder="Search a location" id="example-search-input">
+                <span id="searchBtn" class="input-group-append">
+                    <button onClick="handleSearch()" class="input-group-text bg-transparent search"><i class="searchIcon" data-feather="search"></i></button>
+                </span>
+            </div>
+
+            <div id="grid">
+                <div class="row">
+                    <div class="col-lg-6" id="star-ratings">
+                    </div>
+                    <div class="col-lg-6" id="weather">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="pictures">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper"></div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row" id="reviews"></div>
+
+            </div>
+        <div id="placesApiEntryPoint"></div>
+    </body>
+
+    <!-- Weather API logic -->
+    <script src="weather_api.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <!-- Latest Bootstrap compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Slider -->
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script src="logic.js"></script>
+
+    <!-- Places API logic -->
+    <script src="places_api.js"></script>
+
+    <!-- Google Places library -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEbuDucwNg1dtC8iCTEWyP2gRziZAgRRQ&libraries=places&callback=setupPlacesService" async defer></script>
+
+
+    <script>
+        feather.replace()
+
+        $('#grid').hide();
+
+        $('#search-bar').focus(function() {
+        $(this).attr('placeholder', 'US Bank Stadium, Disney Land, Sydney Australia . . .');
+        })
+
+        $('#search-bar').focusout(function() {
+         $(this).attr('placeholder', 'Search a location');
+        })
+    </script>
+</html>
